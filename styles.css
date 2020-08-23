@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(42, 42, 42);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(41, 57, 75);
+    height: 60px;
+    padding: 5px;
+    color: white;
+    font-size: 20pt;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+header div p {
+    margin: 0;
+}
+
+.refs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.refs div a img {
+    margin: 0 5px;
+}
+
+section {
+    display: grid;
+    justify-content: center;
+}
+
+.calc {
+    margin: 40px;
+    padding: 25px;
+    background-color: gray;
+    width: 360px;
+}
+
+.screen, .key {
+    background-color: white;
+}
+
+.screen h1 {
+    text-align: end;
+    padding: 10px 20px 0 20px;
+    margin: 0;
+    font-size: 25pt;
+    font-weight: bold;
+    height: 40px;
+    overflow: hidden;
+}
+
+.screen p {
+    text-align: end;
+    padding: 5px 20px;
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.key {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.key div {
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.25s ease-in-out;
+}
+
+.key div p {
+    margin: 0;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+.key div:hover {
+    background-color: #b8fafa;
+    cursor: pointer;
+    margin-top: -8%;
+    padding-bottom: 8%;
+    border-radius: 10px 10px 0 0;
+}
+
+.num {
+    background-color: skyblue;
+}
+
+.operator {
+    background-color: white;
+}
