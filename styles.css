@@ -64,8 +64,7 @@ section {
     font-size: 25pt;
     font-weight: bold;
     height: 40px;
-    overflow: hidden;
-    transition: text 0.1s ease-in-out;
+    overflow: hidden;    
 }
 
 .screen p {
@@ -90,7 +89,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.1s ease-in-out, margin 0.1s ease-in-out, padding 0.1s ease-in-out, border-radius 0.1s ease-in-out;
+    transition: background 0.15s ease-in-out, margin 0.15s ease-in-out, padding 0.15s ease-in-out, border-radius 0.15s ease-in-out;
 }
 
 .key div p {
