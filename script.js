@@ -1,3 +1,14 @@
+function copyInput() {
+    var copyText = document.getElementById("scr");
+    var cops = document.getElementById("copy")
+    var but = document.querySelector("button")
+    cops.innerText = copyText.innerText
+    cops.select();
+    document.execCommand('copy')
+    but.innerText = "Copied!"
+    setTimeout(() => {but.innerText = "Copy"}, 1500)
+  }
+
 var ini = document.getElementById("scr")
 var mini = document.getElementById("scr2")
 
@@ -37,7 +48,39 @@ for (let i=0; i < nums.length; ++i) {
     })
 }
 
+function checkCompute() {
+    if (cur == 'num2') {
+        num1 = equals()
+        comp = num1
+    }
+}
+
+function equals() {
+    if (op == 'sum') {
+        ans = (parseInt(num1) + parseInt(num2)) + ''
+        ini.innerHTML = ans
+    } else if (op == 'diff') {
+        ans = (parseInt(num1) - parseInt(num2)) + ''
+        ini.innerHTML = ans
+    } else if (op == 'mult') {
+        ans = (parseInt(num1) * parseInt(num2)) + ''
+        ini.innerHTML = ans
+    } else if (op == 'div') {
+        ans = (parseInt(num1) / parseInt(num2)) + ''
+        ini.innerHTML = ans
+    } else {
+        ini.innerHTML = "0"
+    }
+    num1 = ''
+    num2 = ''
+    op = null
+    cur = 'num1'
+    comp = ''
+    return ans
+}
+
 plus.addEventListener("click", function() {
+    checkCompute()
     op = 'sum'
     cur = 'num2'
     comp += " + "
@@ -45,6 +88,7 @@ plus.addEventListener("click", function() {
     scr2.innerHTML = comp
 })
 minus.addEventListener("click", function() {
+    checkCompute()
     op = 'diff'
     cur = 'num2'
     comp += " - "
@@ -52,6 +96,7 @@ minus.addEventListener("click", function() {
     scr2.innerHTML = comp
 })
 multi.addEventListener("click", function() {
+    checkCompute()
     op = 'mult'
     cur = 'num2'
     comp += " x "
@@ -59,6 +104,7 @@ multi.addEventListener("click", function() {
     scr2.innerHTML = comp
 })
 div.addEventListener("click", function() {
+    checkCompute()
     op = 'div'
     cur = 'num2'
     comp += " / "

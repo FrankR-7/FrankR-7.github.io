@@ -63,8 +63,9 @@ section {
     margin: 0;
     font-size: 25pt;
     font-weight: bold;
-    height: 40px;
-    overflow: hidden;    
+    height: auto;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .screen p {
@@ -74,6 +75,14 @@ section {
     color: grey;
     font-weight: bold;
     margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.screen div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 40px;
 }
 
 .key {
@@ -113,4 +122,25 @@ section {
 
 .operator {
     background-color: white;
+}
+
+#copy {
+    width: 0;
+    height: 0;
+    border: none;
+    outline: none;
+}
+
+button {
+    border-bottom-right-radius: 10px;
+    font-size: 16pt;
+    border: none;
+    background-color: white;
+    transition: background 0.15s ease-in-out, font-size 0.15s ease-in-out;
+    width: 90px;
+}
+
+button:hover {
+    background-color: #b8fafa;
+    font-size: 18pt;
 }

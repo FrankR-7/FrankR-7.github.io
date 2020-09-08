@@ -28,7 +28,10 @@
     <section>
         <div class="calc">
             <div class="screen">
-                <h1 id="scr">0</h1>
+                <div>
+                    <button onclick="copyInput()">Copy</button>
+                    <h1 id="scr">0</h1>
+                </div>
                 <p id="scr2">0</p>
             </div>
 
@@ -51,6 +54,7 @@
                 <div class="operator" id="div"><p>/</p></div>
             </div>
         </div>
+        <textarea id="copy"></textarea>
     </section>
     <script type="text/javascript" src="script.js"></script>
 </body>
