@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(42, 42, 42);
+    background-image: linear-gradient(to right, aquamarine, rgb(100, 255, 139));
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
 }
@@ -18,26 +18,34 @@ header {
     left: 0;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(41, 57, 75);
+    background: none;
     height: 60px;
     padding: 5px;
     color: white;
     font-size: 20pt;
 }
 
-header div {
+.logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 }
 
-header div img {
+.logo img, .refs img {
     height: 60px;
     margin-right: 10px;
 }
 
-header div p {
+.logo img {
+    border-radius: 50%;
+}
+
+.logo p{
     margin: 0;
+
+    color: white;
+    
 }
 
 .refs {
@@ -57,12 +65,15 @@ section {
 .calc {
     margin: 40px;
     padding: 25px;
-    background-color: gray;
+    background-color: rgb(218, 218, 218);
     width: 360px;
+    opacity: 75%;
+    border-radius: 15px;
 }
 
 .screen, .key {
-    background-color: white;
+    border-radius: 15px;
+    background: none;
 }
 
 .screen h1 {
@@ -118,19 +129,19 @@ section {
 }
 
 .key div:hover {
-    background-color: #b8fafa;
+    background-color: #79d6d6d2;
     cursor: pointer;
     margin-top: -8%;
     padding-bottom: 8%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
 }
 
 .num {
-    background-color: skyblue;
+    background-color: rgb(174, 231, 253);
 }
 
-.operator {
-    background-color: white;
+#ce:hover {
+    background-color: rgb(255, 113, 113);
 }
 
 #copy {
@@ -138,13 +149,14 @@ section {
     height: 0;
     border: none;
     outline: none;
+    opacity: 0;
 }
 
 button {
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     font-size: 16pt;
     border: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     transition: background 0.15s ease-in-out, font-size 0.15s ease-in-out;
     width: 90px;
 }
