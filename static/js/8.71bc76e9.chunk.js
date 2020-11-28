@@ -1,0 +1,2 @@
+(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[8],{51:function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return o}));var l=n(0),a=n.n(l),r=n(39);function o(e){e.lang;return a.a.createElement(a.a.Fragment,null,a.a.createElement(r.a,null,a.a.createElement("title",null,"Franklin Rosales | Projects")),a.a.createElement("div",null,"I might just delete this page and link to a blog site or smth"))}}}]);
+//# sourceMappingURL=8.71bc76e9.chunk.js.map
