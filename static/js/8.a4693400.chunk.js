@@ -1,2 +1,0 @@
-(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[8],{52:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return i}));var l=t(0),a=t.n(l),r=t(38);function i(e){e.lang;return a.a.createElement(a.a.Fragment,null,a.a.createElement(r.a,null,a.a.createElement("title",null,"Franklin Rosales | Hire")),a.a.createElement("div",null,"Hire me bruh"))}}}]);
-//# sourceMappingURL=8.a4693400.chunk.js.map

@@ -2,7 +2,7 @@ window.projects = [
     {
         "title": "Mini Calculator",
         "desc": "A simple calculator made with vanilla JavaScript",
-        "link": "calc",
+        "link": "/calc",
         "img": "https://thumbs.dreamstime.com/b/creative-warm-gradient-line-drawing-cartoon-calculator-original-151811105.jpg"
     },
     {
@@ -15,7 +15,7 @@ window.projects = [
     {
         "title": "Mini Todo List",
         "desc": "A simple todo keeper app made with react",
-        "link": "todo",
+        "link": "/todo",
         "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
     },
     {
