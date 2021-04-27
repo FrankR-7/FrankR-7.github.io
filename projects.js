@@ -22,6 +22,12 @@ window.projects = [
         "title": "Project list API",
         "desc": "An API I built to serve a list of projects I've made in JSON format. Made with flask.py and hosted on Heroku.",
         "link": "https://frank-project-list.herokuapp.com/projects",
-        "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg"
+        "img": "https://www.ukauthority.com/media/7862/code-on-computer-screen-govuk-open-government-licence-v30.jpg"
+    },
+    {
+        "title": "Conway's Game of Life",
+        "desc": "A simplified version of the simulation John Conway invented. Made with React.",
+        "link": "/gol",
+        "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--RAcUUeRg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://github.com/alinp25/alinp25.github.io/raw/master/assets/images/gameoflife/gli.gif"
     }
 ]
